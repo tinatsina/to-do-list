@@ -1,11 +1,13 @@
 import './style.css';
 
-document.addEventListener('DOMContentLoaded', () => {
-  const clicked = document.querySelector('.clicked');
+const botContainer = document.querySelector('.bot-container');
 
-  clicked.addEventListener('click', () => {
-    alert('You clicked me!');
-  });
-});
-
-console.log('Hello Webpack');
+botContainer.innerHTML = `
+                 <div class="todo-card">
+                    <div class="card-items">
+                        <input type="checkbox">
+                        <p>Important stuff</p>
+                        <h3>X</h3>
+                    </div>
+                </div>
+`;

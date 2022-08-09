@@ -1,3 +1,34 @@
-h1 {
-  color: brown;
+.list-section {
+  width: 50%;
+  margin: auto;
+}
+
+.top-container > h1 {
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  margin: auto;
+  display: table;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+form > input {
+  width: max-content;
+  height: 3em;
+}
+
+.bot-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-items > input,
+.card-items > p,
+.card-items > h3 {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
 }

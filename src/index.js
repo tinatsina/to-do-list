@@ -1,15 +1,16 @@
 import './style.css';
-import ToDoItem from './common/todoItem.js';
+import ToDoList from './common/ToDoList.js';
 
-const item1 = new ToDoItem('Buy milk');
-const item2 = new ToDoItem('Buy eggs');
-const item3 = new ToDoItem('Buy bread');
+const todoList = new ToDoList();
 
-const todoList = [item1, item2, item3];
-console.log(todoList);
+todoList.addItem('Buy milk');
+todoList.addItem('Buy eggs');
+todoList.addItem('Buy bread');
+todoList.addItem('Buy cheese');
+console.log(todoList.getItems().length);
 const botContainer = document.querySelector('.bot-container');
 
-todoList.forEach((item) => {
+todoList.getItems().forEach((item) => {
   botContainer.innerHTML += `
                 <div class="todo-card" id="${item.id}">
                     <div class="card-items">

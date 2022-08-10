@@ -1,28 +1,17 @@
 import './style.css';
-import getLocalStorage from './common/loadStorage';
+import ToDoItem from './common/todoItem.js';
 
-console.log(getLocalStorage());
+const item1 = new ToDoItem('Buy milk');
+const item2 = new ToDoItem('Buy eggs');
+const item3 = new ToDoItem('Buy bread');
 
-class ToDoItem {
-  constructor(description, completed, index) {
-    this.description = description;
-    this.completed = completed;
-    this.index = index;
-  }
-}
-
-const item1 = new ToDoItem('Learn Apache', false, 0);
-const item2 = new ToDoItem('Learn Linux', false, 1);
-const item3 = new ToDoItem('Learn React-Redux', false, 2);
-const item4 = new ToDoItem('Learn HTML', false, 3);
-const item5 = new ToDoItem('Learn CSS', false, 4);
-
-const todoList = [item1, item2, item3, item4, item5];
+const todoList = [item1, item2, item3];
+console.log(todoList);
 const botContainer = document.querySelector('.bot-container');
 
 todoList.forEach((item) => {
   botContainer.innerHTML += `
-                <div class="todo-card">
+                <div class="todo-card" id="${item.id}">
                     <div class="card-items">
                         <input type="checkbox">
                         <p>${item.description}</p>

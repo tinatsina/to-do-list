@@ -1,10 +1,10 @@
 export default function getLocalStorage() {
-  let books;
+  let lists;
 
-  if (localStorage.getItem('books') === null) {
-    books = [];
+  if (localStorage.getItem('lists') === null) {
+    lists = [];
   } else {
-    books = JSON.parse(localStorage.getItem('books'));
+    lists = JSON.parse(localStorage.getItem('lists'));
   }
-  return books;
+  return lists;
 }

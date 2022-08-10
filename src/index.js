@@ -7,7 +7,12 @@ todoList.addItem('Buy milk');
 todoList.addItem('Buy eggs');
 todoList.addItem('Buy bread');
 todoList.addItem('Buy cheese');
-console.log(todoList.getItems().length);
+// --------------------------------------------------------------------------------------
+localStorage.clear();
+localStorage.setItem('books', JSON.stringify(todoList.getItems()));
+const books = JSON.parse(localStorage.getItem('books'));
+console.log(books);
+// --------------------------------------------------------------------------------------
 const botContainer = document.querySelector('.bot-container');
 
 todoList.getItems().forEach((item) => {

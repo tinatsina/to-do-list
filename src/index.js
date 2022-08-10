@@ -1,4 +1,7 @@
 import './style.css';
+import getLocalStorage from './common/loadStorage';
+
+console.log(getLocalStorage());
 
 class ToDoItem {
   constructor(description, completed, index) {

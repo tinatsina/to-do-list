@@ -15,6 +15,9 @@ export default class ToDoList {
     for (let i = 0; i < this.items.length; i += 1) {
       if (this.items[i].description === description) {
         this.items.splice(i, 1);
+        for (let i = 0; i < this.items.length; i += 1) {
+          this.items[i].index = i;
+        }
         localStorage.setItem('todoList', JSON.stringify(this.items));
       }
     }

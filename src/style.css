@@ -1,11 +1,12 @@
 .list-section {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
 .top-container > h1 {
   margin: auto;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
@@ -27,8 +28,20 @@ form > input {
 
 .card-items > input,
 .card-items > p,
-.card-items > h3 {
+.card-items > svg {
   display: inline-block;
   width: 30%;
+  text-align: left;
+}
+
+.clear-list {
+  height: 3em;
+  margin: auto;
   text-align: center;
+  line-height: 2.5em;
+  background-color: #cfcfcf;
+}
+
+hr {
+  margin: auto;
 }

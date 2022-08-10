@@ -1,16 +1,11 @@
 import './style.css';
 import ToDoList from './common/ToDoList.js';
-import onClickEvents from './common/onClickActions';
-
-// onClickEvents();
 
 const todoList = new ToDoList();
 
 // --------------------------------------------------------------------------------------
-
 localStorage.setItem('books', JSON.stringify(todoList.getItems()));
 const books = JSON.parse(localStorage.getItem('books'));
-console.log(books);
 // --------------------------------------------------------------------------------------
 const botContainer = document.querySelector('.bot-container');
 

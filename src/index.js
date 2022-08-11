@@ -10,7 +10,6 @@ clearChecked(todoList);
 // --------------------------------------------------------------------------------------
 localStorage.setItem('books', JSON.stringify(todoList.getItems()));
 const books = JSON.parse(localStorage.getItem('books'));
-console.log(books);
 // --------------------------------------------------------------------------------------
 const botContainer = document.querySelector('.bot-container');
 

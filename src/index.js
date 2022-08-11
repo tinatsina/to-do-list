@@ -1,7 +1,11 @@
 import './style.css';
 import ToDoList from './common/ToDoList.js';
+import { onCheckTrue, clearChecked } from './common/checkBox.js';
 
 const todoList = new ToDoList();
+
+onCheckTrue(todoList);
+clearChecked(todoList);
 
 // --------------------------------------------------------------------------------------
 localStorage.setItem('books', JSON.stringify(todoList.getItems()));
@@ -27,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 books.forEach((item) => {
   botContainer.innerHTML += `
-                <div class="todo-card" id="${item.id}">
-                    <div class="card-items">
-                        <input type="checkbox">
+                <div class="todo-card" id="asd">
+                    <div class="card-items" id="${item.id}">
+                        <input type="checkbox" class="to-be-checked">
                         <p>${item.description}</p>
                         <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

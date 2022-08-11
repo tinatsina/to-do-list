@@ -23,14 +23,13 @@ export default class ToDoList {
     }
   }
 
-  editItem(index, description) {
-    this.items[index].description = description;
-    localStorage.setItem('todoList', JSON.stringify(this.items));
-  }
-
-  toggleCompleted(index) {
-    this.items[index].completed = !this.items[index].completed;
-    localStorage.setItem('todoList', JSON.stringify(this.items));
+  toggleCompleted(id) {
+    for (let i = 0; i < this.items.length; i += 1) {
+      if (this.items[i].id === id) {
+        this.items[i].completed = !this.items[i].completed;
+        localStorage.setItem('todoList', JSON.stringify(this.items));
+      }
+    }
   }
 
   getItems() {

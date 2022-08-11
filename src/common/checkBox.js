@@ -11,4 +11,14 @@ function onCheckTrue(todoList) {
   });
 }
 
-export default onCheckTrue;
+function clearChecked(todoList) {
+  document.addEventListener('DOMContentLoaded', () => {
+    const clearAllChecked = document.querySelector('.clear-all-checked');
+    clearAllChecked.addEventListener('click', () => {
+      todoList.clearCompleted();
+      document.location.reload(true);
+    });
+  });
+}
+
+export { onCheckTrue, clearChecked };

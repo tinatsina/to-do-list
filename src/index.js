@@ -1,16 +1,16 @@
 import './style.css';
 import ToDoList from './common/ToDoList.js';
-import onCheckTrue from './common/checkBox';
-
-// localStorage.clear();
+import { onCheckTrue, clearChecked } from './common/checkBox.js';
 
 const todoList = new ToDoList();
 
 onCheckTrue(todoList);
+clearChecked(todoList);
 
 // --------------------------------------------------------------------------------------
 localStorage.setItem('books', JSON.stringify(todoList.getItems()));
 const books = JSON.parse(localStorage.getItem('books'));
+console.log(books);
 // --------------------------------------------------------------------------------------
 const botContainer = document.querySelector('.bot-container');
 

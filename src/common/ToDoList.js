@@ -32,6 +32,19 @@ export default class ToDoList {
     }
   }
 
+  clearCompleted() {
+    for (let i = 0; i < this.items.length; i += 1) {
+      if (this.items[i].completed) {
+        this.items.splice(i, 1);
+        i -= 1;
+      }
+    }
+    for (let i = 0; i < this.items.length; i += 1) {
+      this.items[i].index = i + 1;
+    }
+    localStorage.setItem('todoList', JSON.stringify(this.items));
+  }
+
   getItems() {
     return this.items;
   }

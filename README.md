@@ -12,6 +12,15 @@
 - Markdown
 - WebPack
 
+## Live Demo
+
+> The live deploment of this website can seen via the 'npm' ***gh-pages*** view \
+> The deployment will be a to-do-list \
+
+## [Live Demo Link](https://tinatsina.github.io/to-do-list/)
+
+![The image](img/001.png)
+
 ## Getting Started
 
 **Set up a linter for HTML, CSS and JS**

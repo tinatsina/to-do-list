@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1660719361635" clover="3.2.0">
-  <project timestamp="1660719361635" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+<coverage generated="1660789795744" clover="3.2.0">
+  <project timestamp="1660789795744" name="All files">
+    <metrics statements="35" coveredstatements="24" conditionals="8" coveredconditionals="4" methods="9" coveredmethods="7" elements="52" coveredelements="35" complexity="0" loc="35" ncloc="35" packages="1" files="4" classes="4"/>
+    <file name="ToDoList.js" path="C:\Users\tinay\3D Objects\to-do-list\src\common\ToDoList.js">
+      <metrics statements="22" coveredstatements="11" conditionals="6" coveredconditionals="2" methods="6" coveredmethods="4"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="11" count="5" type="stmt"/>
+      <line num="15" count="5" type="stmt"/>
+      <line num="16" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="19" count="8" type="stmt"/>
+      <line num="21" count="5" type="stmt"/>
+      <line num="24" count="5" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="31" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="44" count="0" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="50" count="4" type="stmt"/>
+    </file>
     <file name="keygen.js" path="C:\Users\tinay\3D Objects\to-do-list\src\common\keygen.js">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="2" count="6" type="stmt"/>
-      <line num="3" count="6" type="stmt"/>
-      <line num="4" count="6" type="stmt"/>
-      <line num="5" count="96" type="stmt"/>
-      <line num="7" count="6" type="stmt"/>
+      <line num="2" count="11" type="stmt"/>
+      <line num="3" count="11" type="stmt"/>
+      <line num="4" count="11" type="stmt"/>
+      <line num="5" count="176" type="stmt"/>
+      <line num="7" count="11" type="stmt"/>
+    </file>
+    <file name="loadStorage.js" path="C:\Users\tinay\3D Objects\to-do-list\src\common\loadStorage.js">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="4" count="14" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="7" count="12" type="stmt"/>
+      <line num="9" count="14" type="stmt"/>
+    </file>
+    <file name="todoItem.js" path="C:\Users\tinay\3D Objects\to-do-list\src\common\todoItem.js">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="8" count="5" type="stmt"/>
+      <line num="9" count="5" type="stmt"/>
     </file>
   </project>
 </coverage>

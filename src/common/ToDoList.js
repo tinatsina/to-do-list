@@ -21,6 +21,7 @@ export default class ToDoList {
         localStorage.setItem('todoList', JSON.stringify(this.items));
       }
     }
+    this.items = getLocalStorage();
   }
 
   toggleCompleted(id) {

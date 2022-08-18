@@ -29,4 +29,11 @@ describe('ToDoList', () => {
     todoList.removeItem('ToDoItem 5');
     expect(todoList.getItems().length).toBe(0);
   });
+  test('check the size', () => {
+    const todoList = new ToDoList();
+    localStorage.clear();
+    todoList.addItem('ToDo');
+    const sz = todoList.length;
+    expect(sz).not.toBeNull();
+  });
 });
